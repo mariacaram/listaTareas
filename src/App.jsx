@@ -7,7 +7,7 @@ function App() {
   return (
 <>
 <Titulo></Titulo>
-<Subtitulo></Subtitulo>
+<Subtitulo comision = "16i" estado={true}></Subtitulo>
     </>
   );
 }

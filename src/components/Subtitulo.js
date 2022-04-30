@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Subtitulo = () => {
+const Subtitulo = (props) => {
     return (
         <div>
-            <h2>Tareas de la Comision</h2>
+            <h2 className='text-center text-light'>Tareas de la Comision {props.comision}</h2>
         </div>
     );
 };
