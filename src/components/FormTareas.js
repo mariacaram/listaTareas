@@ -1,4 +1,5 @@
 import React from "react";
+import ListaTareas from "./ListaTareas";
 
 const FormTareas = () => {
   return (
@@ -16,6 +17,7 @@ const FormTareas = () => {
           </button>
         </div>
       </form>
+      <section className="container"><ListaTareas/></section>
     </>
   );
 };
