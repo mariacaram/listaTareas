@@ -1,9 +1,19 @@
-import React from 'react';
+import React from "react";
 
 const ItemTarea = (props) => {
-    return (
-        <li class="list-group-item">{props.dato}</li>
-    );
+  return (
+    <li class="list-group-item d-flex justify-content-between">
+      {props.dato}
+      <button
+        className="btn btn-danger"
+        onClick={() => {
+          props.borrarTarea(props.dato);
+        }}
+      >
+        Borrar
+      </button>
+    </li>
+  );
 };
 
 export default ItemTarea;
