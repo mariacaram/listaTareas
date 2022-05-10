@@ -8,6 +8,7 @@ const FormTareas = () => {
     e.preventDefault();
     console.log("desde el evento submit");
     setTareas([...tareas, tareaIndividual]);
+    setTareaIndividual(" ");
   };
   return (
     <>
@@ -18,6 +19,7 @@ const FormTareas = () => {
             placeholder="Ingrese una tarea"
             className="form-control"
             onChange={(e) => setTareaIndividual(e.target.value)}
+            value={tareaIndividual}
           ></input>
           <button className="btn btn-outline-light " type="submit">
             {" "}
@@ -26,7 +28,7 @@ const FormTareas = () => {
         </div>
       </form>
       <section className="container">
-        <ListaTareas />
+        <ListaTareas arregloTareas={tareas} />
       </section>
     </>
   );
